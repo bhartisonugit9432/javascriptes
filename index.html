@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <title>Dom learn</title>
+    </head>
+    <body>
+        <h2>Welcome to Dom learn</h2>
+        <!-- <p>This is a simple document to learn about the DOM.</p> -->
+
+        <h1 id="title" class="heading">Welcome to Dom learn <span
+                style="display: none;">Chai Aur
+                Code</span></h1>
+        <p>This is the first service description.</p>
+        <p id="service1-description">Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Ad
+            nemo accusantium dolor nisi! Nihil id labore perferendis
+            quasi asperiores hic voluptates cupiditate, consequatur vero
+            laborum iure rem quam similique necessitatibus enim,
+            laudantium minus quas nobis!</p>
+        <h2 id="title2" class="heading">Service 2</h2>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+            perferendis sunt totam temporibus atque beatae!</h1>
+
+        <ul>
+            <li>first</li>
+            <li>Second</li>
+            <li>third</li>
+        </ul>
+
+        <div class="parent">
+            <div class="day">sunday</div>
+            <div class="day">munday</div>
+            <div class="day">tuesday</div>
+            <div class="day">wednesday</div>
+            <div class="day">thursday</div>
+        </div>
+
+        <script>
+            const parent = document.querySelector('.parent');
+            // console.log(parent);
+            // console.log(parent.children);
+            // console.log(parent.children[2].innerHTML);
+
+            // for (let i = 0; i < parent.children.length; i++) {
+            //     console.log(parent.children[i].innerHTML);
+                
+                
+            // }
+            
+            // parent.children[1].style.color = "blue";
+
+            // console.log(parent.firstElementChild);
+            // console.log(parent.lastElementChild);
+
+            // const oneday = document.querySelector('.day')
+            // console.log(oneday.parentElement);
+            // console.log(oneday.nextElementSibling);
+            console.log("NODES:", parent.childNodes);
+
+            
+            
+            
+            
+        </script>
+
+    </body>
+</html>

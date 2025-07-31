@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dom manipulation</title>
+        <style>
+        body{
+            background-color:black;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+
+        <h1>Add New Element</h1>
+
+        <ul class="language">
+            <li>Javascript</li>
+        </ul>
+
+        <script>
+        const div = document.createElement('div')
+        div.className = "main"
+        div.id = Math.round(Math.random*10+1)
+        div.style.color = 'green'
+        div.style.backgroundColor = 'orange'
+        div.style.padding = '15px'
+        const addText = document.createTextNode("Chai Aur Code")
+        div.appendChild(addText)
+
+        document.body.appendChild(div)
+
+        function AddLang(languageName){
+            const li = document.createElement('li')
+            li.innerHTML = `${languageName}`
+            
+            
+            document.querySelector('.language').appendChild(li)
+        }
+        AddLang("Python")
+
+        function addOptiLang(langName) {
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+            
+        }
+        addOptiLang("java")
+    </script>
+
+    </body>
+</html>
